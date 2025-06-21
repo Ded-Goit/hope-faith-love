@@ -1,0 +1,82 @@
+/* CSS Reset (за бажанням додайте свій або normalize.css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+main {
+  flex-grow: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Основний шрифт для всього тіла */
+body {
+  font-family: var(--font-inter), var(--font-noto-sans), sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fdfdfd;
+}
+
+/* Заголовки — з духовним акцентом */
+h1, h2, h3, h4, h5, h6,
+blockquote, cite {
+  font-family: var(--font-merriweather), var(--font-noto-serif), serif;
+  color: #111;
+  line-height: 1.4;
+}
+
+/* Альтернативний шрифт, якщо потрібно вручну */
+.serif {
+  font-family: var(--font-noto-serif), serif;
+}
+
+.sans {
+  font-family: var(--font-noto-sans), sans-serif;
+}
+
+.merri {
+  font-family: var(--font-merriweather), serif;
+}
+
+.inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Styles for Mobile devices */
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0px 72px;
+  }
+}
