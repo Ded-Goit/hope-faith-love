@@ -1,4 +1,4 @@
-/* CSS Reset (за бажанням додайте свій або normalize.css) */
+/* CSS Reset (за бажанням додайте normalize.css) */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,8 +37,14 @@ body {
 }
 
 /* Заголовки — з духовним акцентом */
-h1, h2, h3, h4, h5, h6,
-blockquote, cite {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+cite {
   font-family: var(--font-merriweather), var(--font-noto-serif), serif;
   color: #111;
   line-height: 1.4;

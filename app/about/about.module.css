@@ -1,0 +1,144 @@
+/* about.module.css */
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.35;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.paragraph {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.list {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.listItem {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: #ffffffcc;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.card h4 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Carousel Custom Styling */
+.carouselContainer {
+  padding: 2rem 0 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.carouselItem {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.carouselDots {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonialCard {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialCard blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.testimonialCard cite {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive Dots Positioning */
+@media only screen and (max-width: 767px) {
+  .carouselDots {
+    margin-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .carouselDots {
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .carouselDots {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
