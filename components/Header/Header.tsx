@@ -18,6 +18,9 @@ export default function Header() {
         <Link href="/about" className={styles.navLink}>
           About
         </Link>
+        <Link href="/contact" className={styles.navLink}>
+          Contact
+        </Link>
       </nav>
     </header>
   );
